@@ -1,56 +1,79 @@
 {% extends "base.html" %}
 {% block title %}Index{% endblock %}
 {% block content %}
-<div class="jumbotron">
-        <h1 class="display-4">Did You Know We are Awesome?!</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
-            porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-        </p>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center teal-text">Did You Know We are Awesome?!</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
+            porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</h5>
+      </div>
+      <br><br>
 
     </div>
-    <div class="container">
+  </div>
 
-        <h1 class="text-center mb-3">Super Duper Awesome</h1>
 
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h5 class="text-center">Reason #1</h3>
-                    <ul>
-                        <li>Class aptent</li>
-                        <li>Qui nobis</li>
-                        <li>Pacem</li>
-                    </ul>
-            </div>
-            <div class="col">
-                <h5 class="text-center">Reason #2</h3>
-                    <ul>
-                        <li>Class aptent</li>
-                        <li>Qui nobis</li>
-                        <li>Pacem</li>
-                    </ul>
-            </div>
-            <div class="col">
-                <h5 class="text-center">Reason #3</h3>
-                    <ul>
-                        <li>Class aptent</li>
-                        <li>Qui nobis</li>
-                        <li>Pacem</li>
-                    </ul>
-            </div>
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+              <h3 class="header center teal-text">Super Duper Awesome</h3>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Semper Ubi Sub Ubi</h5>
+
+            <p class="light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-           <div class="col">
-               <img class="mx-auto d-block" src="https://placeimg.com/200/200/any" />
-               <h6 class="text-center">Bobby</h6>
-           </div> 
-           <div class="col">
-               <img class="mx-auto d-block" src="https://placeimg.com/200/200/any" />
-               <h6 class="text-center">Robert {{ name }}</h6>
-           </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Acta Non Verba</h5>
+
+            <p class="light">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+          </div>
         </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center black-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Veni Vidi Vici</h5>
+
+            <p class="light">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
+    <br><br>
+  </div>
+
+<div class="row">
+    <div class="col s12 m3 offset-m2">
+      <div class="card">
+        <div class="center card-image">
+          <img src="https://placeimg.com/200/200/any">
+        </div>
+        <div class="center card-content">
+          <h3>ROBERT</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m3 offset-m2">
+      <div class="card">
+        <div class="center card-image">
+          <img src="https://placeimg.com/200/200/any">
+        </div>
+        <div class="center card-content">
+          <h3>BOBBY</h3>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
