@@ -34,6 +34,7 @@ class FormHandler(TemplateHandler):
 def make_app():
   return tornado.web.Application([
     (r"/", MainHandler),
+    (r"/form", FormHandler),
   ], autoreload=True)
   
 if __name__ == "__main__":
