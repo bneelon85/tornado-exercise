@@ -16,7 +16,7 @@
 <body>
   {% block navbar %}
   <nav class="black darken-4" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" id="logo" src="../static/img/whiteBlack.png"/></a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" id="logo" src="static/img/whiteBlack.png"/></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Home</a></li>
         <li><a href="#">Products</a></li>
@@ -35,7 +35,7 @@
   </nav>
   {% endblock %}
  <div id="content">{% block content %}{% endblock %}</div>
-  <footer class="page-footer teal">
+  <footer class="page-footer indigo">
     {% block footer %}
     <div class="container">
       <div class="row">
@@ -67,7 +67,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="teal-text text-lighten-3" href="http://materializecss.com">Truly AWESOME people</a>
+      Made by <a class="indigo-text text-lighten-3" href="http://materializecss.com">Truly AWESOME people</a>
       </div>
     </div>
     {% endblock %}
@@ -76,8 +76,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <!-- <script src="../../static/js/materialize.js"></script>
-  <script src="../../static/js/init.js"></script>-->
+  <!-- <script src="../../static/js/materialize.js"></script>-->
+  <script src="static/js/init.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   </body>
 </html>
