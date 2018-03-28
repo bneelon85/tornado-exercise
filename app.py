@@ -24,7 +24,7 @@ class MainHandler(TemplateHandler):
       'no-store, no-cache, must-revalidate, max-age=0')
     self.render_template("hello.html", {})
     
-class FormHandler(tornado.web.RequestHandler):
+class FormHandler(TemplateHandler):
   def get(self):
     self.render_template("form.html", {'form_data': {}})
     
