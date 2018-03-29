@@ -103,7 +103,7 @@ class tempHandler(TemplateHandler):
     
   def post(self):
       celsius = self.get_body_argument('celsius', None)
-      
+      celsius = float(celsius)
       tempF = celsius*1.8+32
       
         
