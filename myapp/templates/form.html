@@ -1,32 +1,38 @@
 {% extends "base.html" %} {% block title %}Index{% endblock %} {% block content %}
 <div class="row">
-    <form class="col s12">
+    <form action="/form" method="POST" class="col s12">
         <div class="row">
             <h2 class="header indigo-text">Contact Me</h2>
         </div>
         <div class="row">
             <div class="input-field col s6">
-                <input placeholder="John" id="first_name" type="text" class="validate">
+                <input placeholder="John" id="first_name" name= "first_name" type="text" class="validate" required>
                 <label for="first_name">First Name</label>
             </div>
             <div class="input-field col s6">
-                <input placeholder="Doe" id="last_name" type="text" class="validate">
+                <input placeholder="Doe" id="last_name" name="last_name" type="text" class="validate">
                 <label for="last_name">Last Name</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <textarea placeholder="Enter a message here..." id="textarea1" class="materialize-textarea"></textarea>
+                <textarea placeholder="Enter a message here..." id="textarea1" name="comments" class="materialize-textarea"></textarea>
                 <label for="textarea1">Anything I should know?</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input placeholder="user@emailservice.com" id="email" type="email" class="validate">
+                <input placeholder="user@emailservice.com" id="email" type="email" name="email" class="validate" required>
                 <label for="email">Email</label>
             </div>
         </div>
-        
-    </form>
+        <div class="row">
+            <button class="btn waves-effect waves-light indigo" type="submit">Submit
+    <i class="material-icons right">send</i>
+  </button>
+        </div>
+</div>
+
+</form>
 </div>
 {% endblock %}
