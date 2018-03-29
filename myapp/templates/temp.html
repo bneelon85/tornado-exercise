@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block title %}Index{% endblock %} {% block content %}
+<div class="row">
+    <form action="/form" method="POST" class="col s12">
+        <div class="row">
+            <h2 class="header indigo-text">Convert Celsius to Farenheit</h2>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input placeholder="100" id="celsius" name= "celsius" type="text" class="validate" required>
+                <label for="first_name">Enter a Temperature in degrees Celsius:</label>
+            </div>
+        <div class="row">
+            <h3>{{ tempF }}</h3>
+            <button class="btn waves-effect waves-light indigo" type="submit">Submit
+    <i class="material-icons right">send</i>
+  </button>
+        </div>
+</div>
+
+</form>
+</div>
+{% endblock %}

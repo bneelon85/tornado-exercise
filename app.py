@@ -93,11 +93,31 @@ class FormHandler(TemplateHandler):
         'Cache-Control',
         'no-store, no-cache, must-revalidate, max-age=0')
       self.render_template("form.html", {'error': error})
+
+class tempHandler(TemplateHandler):
+  def get(self):
+    self.set_header(
+      'Cache-Control',
+      'no-store, no-cache, must-revalidate, max-age=0')
+    self.render_template("temp.html", {})
+    
+  def post(self):
+      celsius = self.get_body_argument('celsius', None)
+      
+      tempF = celsius*1.8+32
+      
+        
+      self.set_header(
+        'Cache-Control',
+        'no-store, no-cache, must-revalidate, max-age=0')
+      self.render_template("temp.html", {'tempF': tempF})
+    
     
 def make_app():
   return tornado.web.Application([
     (r"/", MainHandler),
     (r"/form", FormHandler),
+    (r"/temp", tempHandler),
     (r"/(form-success)", PageHandler),
     (r"/static/(.*)", tornado.web.StaticFileHandler, {'path': "static"})
   ], autoreload=True)
